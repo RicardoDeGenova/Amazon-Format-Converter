@@ -1,0 +1,38 @@
+﻿Projeto 'Amazon do Milhão'
+
+Descrição:
+Software que recebe um arquivo .txt da Amazon, no formato tsv (Tab Separated Values) 
+com quebra de linha no final (\n).
+
+O objetivo final é gerar um arquivo .csv no formato csv (Comma Separated Values) 
+com apenas algumas colunas especificadas pelo cliente.
+
+
+Funções:
+* Escolher arquivo de entrada (.txt em formato tsv). 
+* Escolher nome/local do arquivo de sáida (.csv em formato csv)
+* Gerar arquivo de saída 
+* Cadastrar associações de SKU -> URL
+	- Arquivo .bin com valores SKU e URL separado por ';' (ponto e vírgula) 
+
+
+* Converter arquivos:
+
+Amazon (.txt):			--->		Chines (.csv):			  
+					
+//vai preencher manualmente			Order No				  
+quantity-purchased					Lineitem quantity		  
+product-name						Lineitem name			  
+//(color deixa em branco)			Lineitem color			  
+recipient-name						Shipping Name			  
+ship-address-1						Shipping Street			  
+ship-address-2						Shipping Address1		  
+delivery-Instructions				Shipping Address2		  
+cpf									Shipping Company/CPF	  
+ship-city							Shipping City			  
+ship-postal-code					Shipping Zip			  
+ship-state							Shipping Province		  
+ship-country						Shipping Country		  
+ship-phone-number					Shipping Phone			  
+ship-phone-number					Phone					  
+sku (converted to url)				Product link			  
